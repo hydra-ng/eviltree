@@ -1,0 +1,23 @@
+Source: eviltree
+Section: unknown
+Priority: optional
+Maintainer: Joe <joe@rstrike.my.id>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.6.2
+Homepage: https://github.com/t3l3machus/eviltree
+Vcs-Browser: https://github.com/hydra-ng/eviltree
+Vcs-Git: https://github.com/hydra-ng/eviltree.git
+
+Package: eviltree
+Architecture: any
+Multi-Arch: foreign
+Depends:
+ python3,
+ python3-all,
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: A python3 remake of the classic "tree" command with the addition features
+	of searching for user profided keywords/regex in files, highlighting those that
+	containt matches.
