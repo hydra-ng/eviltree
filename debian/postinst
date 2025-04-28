@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+chmod 775 /usr/local/Library/bin/eviltree
